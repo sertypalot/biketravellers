@@ -1,0 +1,932 @@
+/*  
+Theme Name: Blue Lake
+Theme URI: http://www.2yi.net/
+Description: A three column fixed width theme with bot sidebars widget ready.
+Version: 1.0
+Author: Your Index
+Author URI: http://www.2yi.net/
+*/		
+
+*
+{
+margin: 0px;
+padding: 0px;
+}
+
+ul
+{
+list-style: none;
+}
+
+body 
+{
+font-size: 13px;
+margin: 0px;
+text-align: center;
+background-color: white;
+color: #000;
+font-family:  Georgia, "Times New Roman", Times;
+background: #D1D1DF;
+}
+
+
+
+
+                         /***************************************************
+                         *********************** Blogtitle **************
+                         *****************************************************/
+
+#blogtitle
+{
+width: 980px;
+height:215px;
+display: block;
+color: #DFDAC3;
+text-align: left;
+margin: 8px auto 0 auto;
+padding: 5px 0 0 0;
+background: #fff url(img/header.jpg) no-repeat;
+text-align: center;
+}
+
+h1.blogtitle
+{
+margin: 135px 6px 0 5px;
+font-size: 32px;
+}
+
+
+#blogtitle a:link {
+color: #00096F;
+text-decoration: none;
+border: none;
+padding: 6px 15px;
+margin-left: 0;
+}
+
+#blogtitle a:visited {
+color: #00096F;
+text-decoration: none;
+border: none;
+font-weight: bold;
+padding: 6px 15px;
+margin-left: 0;
+}
+
+#blogtitle a:hover {
+color: #3B46BF;
+text-decoration: none;
+padding: 6px 15px;
+margin-left: 0;
+}
+
+                         /***************************************************
+                         *********************** Container **************
+                         *****************************************************/
+#container
+{
+clear:left;
+padding:0;
+margin-left:auto;
+margin-right:auto;
+margin-top: 0;
+width: 980px;
+border-top:1px solid #D1D1DF;
+background: url(img/container.png) repeat-y;
+}
+
+
+
+
+                         /***************************************************
+                         *********************** Left Sidebar Container *******
+                         *****************************************************/
+#leftnav
+{
+float: left;
+width: 180px;
+margin: 0;
+padding-top: 4px;
+margin-top: 0;
+margin-left: 2px;
+margin-bottom: 20px;
+text-align: left;
+}
+
+
+                         /***************************************************
+                         *********************** Right Sidebar Container *******
+                         *****************************************************/
+
+#rightnav
+{
+float: right;
+width: 180px;
+margin: 0;
+padding-top: 4px;
+margin-top: 0;
+margin-bottom: 20px;
+margin-right: 2px;
+text-align: left;
+}
+
+                         /***************************************************
+                         *********************** Content **************
+                         *****************************************************/
+#content
+{
+display: block;
+margin: 0 195px 20px 195px;
+padding: 1em;
+padding-top: 10px;
+margin-top:4px;
+text-align: left;
+}
+
+
+#content ul
+{
+padding-left: 15px;
+}
+
+#content ul li{
+margin-left: 15px;
+list-style-type: square;
+}
+
+#content ul ul li{
+padding-left: 15px;
+}
+
+
+#content ol{
+list-style-position: inside;
+padding-left: 15px;
+padding-top: 2px;
+margin-bottom: 10px;
+}
+
+#content p
+{
+padding-left: 10px;
+}
+                         /***************************************************
+                         *********************** Footer **************
+                         *****************************************************/
+
+#footwrap
+{
+clear:both;
+background: none;
+color: #8F8F8F;
+padding: 5px 1em 5px 1em;
+font-weight: normal;
+border-top: 5px solid #798288;
+background: #EFEFEF;
+}
+
+#footwrap p
+{
+display: block;
+margin-top: 8px;
+margin-bottom: 2px;
+text-align:center;
+}
+
+#footwrap a:link {
+color: #8F8F8F;
+text-decoration: none;
+border: none;
+font-weight: bold;
+}
+#footwrap a:hover {
+color: #8F8F8F;
+text-decoration: underline;
+border: none;
+}
+
+#footwrap a:visited:hover {
+color: #8F8F8F;
+text-decoration: underline;
+border: none;
+}
+
+#footwrap a:visited {
+color: #8F8F8F;
+text-decoration: none;
+border: none;
+font-weight: bold;
+}
+
+#footwrap img {
+padding: 0px 5px 0px 5px;
+}
+
+
+                         /***************************************************
+                         *********************** Left Sidebar **************
+                         *****************************************************/
+#sidebarleft
+{
+color: #000;
+margin-bottom: 10px;
+background: none;
+padding: 0 8px  0 8px;
+}
+
+#sidebarleft ul
+{
+list-type:none;
+}
+
+#sidebarleft li
+{
+background: #D1E2EF;
+padding-bottom: 8px;
+}
+
+#sidebarleft ul li
+{
+display: block;
+padding-left: 10px;
+margin-left: 5px;
+margin-right: 3px;
+padding-bottom: 2px;
+}
+
+#sidebarleft ul li ul li{
+display: block;
+padding-left: 10px;
+margin-left: 5px;
+margin-right: 3px;
+padding-bottom: 2px;
+}
+
+#sidebarleft ul li li{
+display: block;
+padding-left: 10px;
+margin-left: 5px;
+margin-right: 3px;
+padding-bottom: 2px;
+}
+
+#sidebarleft a:link {
+color: #3B46BF;
+text-decoration: none;
+border: none;
+font-weight: bold;
+}
+
+#sidebarleft a:hover {
+color: #3B46BF;
+text-decoration: underline;
+border: none;
+}
+
+#sidebarleft a:visited:hover {
+color: #3B46BF;
+text-decoration: underline;
+border: none;
+}
+
+#sidebarleft a:visited {
+color: #3B46BF;
+text-decoration: none;
+border: none;
+font-weight: bold;
+}
+
+#sidebarleft h2 {
+font-family: Arial, sans-serif; 
+color: #D1E2EF;
+padding: 2px 8px 2px 8px;
+margin-top:8px;
+background:#476CA9 url(img/h2.gif) top left no-repeat;
+}
+
+#sidebarleft p
+{
+padding: 3px;
+}
+
+                         /***************************************************
+                         *********************** Right Sidebar **************
+                         *****************************************************/
+
+#sidebarright
+{
+color: #000;
+margin-bottom: 10px;
+background: none;
+padding: 0 8px  0 8px;
+}
+
+#sidebarright li
+{
+background: #D1E2EF;
+padding-bottom: 8px;
+}
+
+#sidebar ul
+{
+list-style: none;
+}
+
+#sidebarright ul li
+{
+display: block;
+padding-left: 10px;
+margin-left: 5px;
+margin-right: 3px;
+padding-bottom: 2px;
+}
+
+#sidebarright li ul li
+{
+display: block;
+padding-left: 10px;
+margin-left: 5px;
+margin-right: 3px;
+padding-bottom: 2px;
+}
+
+#sidebarright ul li ul li{
+padding-left: 10px;
+padding-bottom: 2px;
+margin-right: 3px;
+}
+
+#sidebarright a:link {
+color: #3B46BF;
+text-decoration: none;
+font-weight: bold;
+border: none;
+}
+
+#sidebarright a:hover {
+color: #3B46BF;
+text-decoration: underline;
+border: none;
+}
+
+#sidebarright a:visited:hover {
+color: #3B46BF;
+text-decoration: underline;
+border: none;
+}
+
+#sidebarright a:visited {
+color: #3B46BF;
+font-weight: bold;
+text-decoration: none;
+border: none;
+}
+
+#sidebarright h2 {
+font-family: Arial, sans-serif; 
+color: #D1E2EF;
+padding: 2px 8px 2px 8px;
+background:#476CA9 url(img/h2.gif) top left no-repeat;
+margin-top:8px;
+}
+
+#sidebarleft p
+{
+padding: 3px;
+}
+
+#leftnav p, #rightnav p { margin: 0 0 1em 0; }
+#content h2 { margin: 0 0 .5em 0; }
+
+
+                         /***************************************************
+                         *********************** Paragraph **************
+                         *****************************************************/
+
+p
+{
+margin-bottom: 12px;
+margin-top: 12px;
+}
+
+                         /***************************************************
+                         *********************** Blockquote ********************
+                         *****************************************************/
+
+blockquote
+{
+margin: 0px 0px 0px 30px;
+padding: 0px 25px 0px 0px;
+font-style: italic;
+color: #666666;
+border-left: 4px solid #B5C9DF;
+}
+
+
+                         /***************************************************
+                         *********************** Post Metadata ****************
+                         *****************************************************/
+
+.postmetadata
+{
+display:block;
+margin: 10px 35px 10px 20px;
+border-left: 4px solid #DFDFDF;
+padding: 5px 8px 8px 35px;
+text-align: left;
+background: #EFF8FF;
+color:#3F3F3F;
+}
+
+#content .postmetadata
+{
+padding-left: 2px;
+}
+
+.postmetadata a:link
+{
+border: none;
+color: #7784EF;
+font-weight: normal;
+}
+
+.postmetadata a:hover
+{
+border: none;
+color: #7784EF;
+font-weight: normal;
+text-decoration: none;
+}
+
+.postmetadata a:visited:hover
+{
+border: none;
+color: #7784EF;
+font-weight: normal;
+}
+
+.postmetadata a:visited
+{
+border: none;
+color: #7784EF;
+font-weight: normal;
+}
+
+                         /***************************************************
+                         *********************** Links ********************
+                         *****************************************************/
+
+a:link
+{
+color: #798288;
+text-decoration: none;
+font-weight: bold;
+}
+
+a:hover
+{
+text-decoration: underline;
+}
+
+a:visited
+{
+color: #8C9EAA;
+text-decoration: none;
+font-weight: normal;
+}
+
+a:visited:hover
+{
+text-decoration: underline;
+}
+
+a img 
+{
+border:none;
+background:none;
+padding:5px;
+}
+
+#feed, #feed img a:link, #feed img a:visited
+{
+border: none;
+}
+
+
+                         /***************************************************
+                         *********************** Comments ********************
+                         *****************************************************/
+
+.commentlist
+{
+padding-left: 40px;
+padding-right: 15px;
+background: #fff;
+color: #000;
+}
+
+.commentlist li
+{
+margin: 8px 10px 8px 15px;
+padding-left: 12px;
+list-style: none;
+background: #EFF8FF;
+margin-bottom: 2px;
+border: 1px solid #8C9EAA;
+}
+
+li.alt
+{
+background: #fff;
+border: 1px solid #8C9EAA;
+}
+
+.commentlist cite
+{
+padding: 2px 3px 1px 3px;
+}
+
+.commentlist p
+{
+padding: 5px 5px 2px 3px;
+margin-bottom: 5px;
+}
+
+.commentlist a:link
+{
+border: none;
+text-decoration: underline;
+font-weight: bold;
+color: #8C9EAA;
+}
+
+.commentlist a:visited
+{
+border: none;
+text-decoration: underline;
+font-weight: bold;
+color: #8C9EAA;
+}
+
+.commentlist a:hover
+{
+border: none;
+text-decoration: underline;
+font-weight: bold;
+color: #8C9EAA;
+}
+
+.commentlist a:visited:hover
+{
+border: none;
+text-decoration: underline;
+font-weight: bold;
+color: #8C9EAA;
+}
+
+.commentmetadata a:link, .commentmetadata a:hover, .commentmetadata a:visited
+{
+text-decoration: none;
+color: #8C9EAA;
+}
+
+.commentnumber {
+font: italic normal 14px 'Times New Roman', Times, serif;
+margin-top: 2px;
+float:right;
+color: #8C9EAA;
+font-size: 28pt;
+}
+
+#comment
+{
+width:80%;
+}
+
+                         /***************************************************
+                         *********************** Headings**************
+                         *****************************************************/
+
+h1
+{
+font-size: 36px;
+color: #666666;
+}
+
+h2
+{
+font-family: Arial, sans-serif; 
+display: block;
+font-size: 16px;
+font-weight: bold;
+padding: 5px 0 0 12px;
+margin: 5px 0 6px 0;
+text-align: left;
+}
+
+h3
+{
+font-family: Arial, sans-serif; 
+display: block;
+font-size: 14px;
+font-weight: bold;
+padding: 5px 0 0 12px;
+margin: 5px 0 6px 0;
+text-align: left;
+}
+
+h3.posttitle   
+{
+font-family: Arial, sans-serif; 
+font-size: 22px;
+font-weight: bold;
+padding-left: 5px;
+padding-top: 2px;
+padding-bottom: 2px;
+margin-top: 12px;
+margin-bottom: 5px;
+border-bottom: 3px solid #3B46BF;
+background:#D1E2EF url(img/title.gif) top left no-repeat;
+}
+
+.posttitle a:link
+{
+font-size: 22px;
+color: #3B46BF;
+font-weight: bold;
+}
+
+.posttitle a:visited
+{
+font-size: 22px;
+color: #3B46BF;
+font-weight: bold;
+}
+
+.posttitle a:hover
+{
+font-size: 22px;
+color: #000;
+font-weight: bold;
+text-decoration: none;
+}
+
+.posttitle a:visited:hover
+{
+text-decoration: none;
+}
+
+h4
+{
+font-family: Arial, sans-serif; 
+margin-top: 15px;
+font-size: 13px;
+font-weight: bold;
+padding: 5px 0 0 12px;
+margin: 5px 0 6px 0;
+text-align: left;
+}
+
+h5
+{
+font-family: Arial, sans-serif; 
+margin-top: 15px;
+font-size: 12px;
+font-weight: bold;
+padding: 5px 0 0 12px;
+margin: 5px 0 6px 0;
+text-align: left;
+}
+
+                          /*Miscellaneous*/
+.date
+{
+font-size: 18px;
+float: right;
+text-transform: uppercase;
+letter-spacing: -2px;
+padding: 3px 5px 3px 5px;
+margin-top: 17px;
+text-align: center;
+color: #afafaf;
+}
+
+.entry
+{
+margin-bottom: 5px;
+}
+                         /*Contained Floats Fix*/
+.post
+{
+display: block;
+overflow:hidden;
+width:98%;
+}
+                     /*Code*/
+code
+{
+display: block;
+margin: 10px 30px 0 30px;
+padding: 2px 10px 5px 10px;
+border-top: 4px solid #798288;
+color: #666666;
+background: #efefef;
+}
+
+/*#searchform {
+margin-left: 5px;
+	}*/
+
+/* navigation
+--------------------------------------------------*/
+#navigation 
+{
+margin-left:auto;
+margin-right:auto;
+width: 980px;
+overflow: hidden;
+height:2.7em;
+line-height:2.7em;
+background-color:#476CA9;
+margin-bottom: 0;
+}
+
+#navigation ul 
+{
+margin:0;
+padding:0;
+}
+
+#navigation li {
+float:left;
+margin:0;
+padding:0;
+list-style-type:none;
+border-right:1px solid;
+white-space:nowrap;
+border-color:#DFDAC3;
+}
+
+#navigation li a 
+{
+display:block;
+padding:0 18px;
+font-size:0.8em;
+text-transform:uppercase;
+letter-spacing:1px;
+}
+
+* html #navigation a {width:1%;} /* see http://www.positioniseverything.net/explorer/escape-floats.html */
+
+#navigation form 
+{
+float:right;
+height:100%;
+width:164px;
+padding:0 15px;
+line-height:0;
+background:#476CA9;
+}
+
+#navigation form fieldset 
+{
+  /* centering the search form could've
+  been done way more elegant but IEWin
+  and Opera refused to follow the rules */
+  margin-top:7px;
+border:0 solid; /* Opera */
+}
+
+* html #navigation form fieldset {margin-top:7px;}
+
+#navigation #s 
+{
+height:1.5em;
+width:115px;
+margin:0 5px 0 0;
+padding:0;
+border:1px solid;
+font-size:0.8em;
+vertical-align:middle;
+}
+
+#navigation #searchbutton 
+{
+height:2em;
+width:auto;
+padding:0 1px;
+font-size:9px;
+letter-spacing:1px;
+text-align:center;
+vertical-align:middle;
+}
+
+
+#navigation li 
+{
+border-color:#DFDAC3;
+}
+
+#navigation a 
+{
+color:white;
+}
+
+#navigation .selected,
+#navigation a:hover
+{
+background-color:#94BDDF;
+}
+
+#navigation a:visited
+{
+font-weight: bold;
+}
+
+
+#navigation #s 
+{
+border-color:#FFF9EA;
+}
+
+#navigation #searchbutton 
+{
+color:white;
+ background-color:#798288;
+}
+
+.button
+{
+margin-bottom: -4px;
+}
+
+
+/******************Calendar**************/
+#wp-calendar 
+{
+empty-cells: show;
+margin: 10px auto 0;
+width: 160px;
+}
+
+#wp-calendar #next a 
+{
+padding-right: 10px;
+text-align: right;
+}
+
+#wp-calendar #prev a 
+{
+padding-left: 10px;
+text-align: left;
+}
+
+#wp-calendar td 
+{
+padding: 2px 0;
+text-align: center;
+}
+
+#wp-calendar th 
+{
+/*padding: 3px 0;*/
+text-align: center;
+}
+
+#wp-calendar caption 
+{
+text-align: center;
+width: 100%;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+img 
+{	
+border:none;
+}
+
+.alignright {
+text-align: right;
+}
+
+.alignleft {
+text-align: left
+}
+
+.navigation {
+display: block;
+text-align: center;
+margin-top: 10px;
+margin-bottom: 0;
+}
+
+.wp-smiley
+{
+padding: 0;
+}
+
+.textwidget
+{
+margin: 2px 5px 2px 5px;
+}
