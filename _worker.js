@@ -27,8 +27,9 @@ export default {
     }
 
     // 3. Subdomain routing: <subdomain>.biketravellers.com -> /blogs/<subdomain>/
-    const parts = host.split(".");
-    if (parts.length > 2 && parts[0] !== "www" && host.includes("biketravellers")) {
+    // Only apply to subdomains of biketravellers.com (not root, not www, not pages.dev)
+    if (host.endsWith(".biketravellers.com") && !host.startsWith("www.")) {
+      const parts = host.split(".");
       const sub = parts[0];
       const newUrl = new URL(request.url);
       if (!newUrl.pathname.startsWith(`/blogs/${sub}`)) {
@@ -36,7 +37,7 @@ export default {
       }
       const response = await env.ASSETS.fetch(newUrl);
       if (response.status === 404) {
-        // Fallback to root assets (e.g. shared wp-includes, shared styles)
+        // Fallback to shared root assets (e.g. wp-includes, shared styles)
         const fallback = await env.ASSETS.fetch(request);
         if (fallback.status !== 404) {
           return fallback;
