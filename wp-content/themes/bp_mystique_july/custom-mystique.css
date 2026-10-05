@@ -1,0 +1,9 @@
+@import "./color-grey.css";
+#header a.nav-extra.rss{background:transparent url(./images/nav-icons.png) no-repeat right top;}
+#header a.twitter{background:transparent url(./images/nav-icons.png) no-repeat left top;}
+body.fluid.col-3 #primary-content{width:52%;left:28%;}
+body.fluid.col-3 #sidebar{width:20%;}
+body.fluid.col-3 #sidebar2{width:28%;left:-52%;}
+#page{background-image:none;}
+body{background-image:url("/files/ivana-header-short.jpg");background-repeat:no-repeat;background-position:center top;}
+.post-info.with-thumbs{margin-left:180px;}
