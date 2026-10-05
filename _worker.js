@@ -11,7 +11,22 @@ export default {
       return Response.redirect("https://elmundoenbici.com" + url.pathname + url.search, 301);
     }
 
-    // 2. Subdomain mapping: <subdomain>.biketravellers.com -> /blogs/<subdomain>/
+    // 2. Redirect dead BuddyPress directories to /about/
+    const p = url.pathname.toLowerCase();
+    if (
+      p.startsWith("/members") ||
+      p.startsWith("/groups") ||
+      p.startsWith("/activity") ||
+      p.startsWith("/forums") ||
+      p.startsWith("/questions") ||
+      p.startsWith("/bpnavslug") ||
+      p.startsWith("/register") ||
+      p.startsWith("/activate")
+    ) {
+      return Response.redirect("https://biketravellers.com/about/", 301);
+    }
+
+    // 3. Subdomain routing: <subdomain>.biketravellers.com -> /blogs/<subdomain>/
     const parts = host.split(".");
     if (parts.length > 2 && parts[0] !== "www" && host.includes("biketravellers")) {
       const sub = parts[0];
@@ -19,10 +34,18 @@ export default {
       if (!newUrl.pathname.startsWith(`/blogs/${sub}`)) {
         newUrl.pathname = `/blogs/${sub}${url.pathname}`;
       }
-      return env.ASSETS.fetch(newUrl);
+      const response = await env.ASSETS.fetch(newUrl);
+      if (response.status === 404) {
+        // Fallback to root assets (e.g. shared wp-includes, shared styles)
+        const fallback = await env.ASSETS.fetch(request);
+        if (fallback.status !== 404) {
+          return fallback;
+        }
+      }
+      return response;
     }
 
-    // 3. Fallback to standard static assets
+    // 4. Standard static asset fetch
     return env.ASSETS.fetch(request);
   }
 };
